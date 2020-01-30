@@ -7,7 +7,24 @@ https://blockstream.com/satellite/
 
 https://github.com/Blockstream/satellite
 
-sendfile.sh requires qrencode
+## sendtext.sh usage example, (requires qrencode and feh to be installed);
 
-sendtext.sh requires qrencode and feh
+`./sendtext.sh any text goes here`
+
+or simply
+
+`./sendtext.sh`
+
+Then folow the prompts in the script. A QR encoded lightning network invoice will pop-up, (using feh) and will be removed once paid.
+
+## sendfile.sh usage example, (requires qrencode to be installed);
+
+`./sendfile.sh file1.txt file2.jpg anotherfile.doc`
+
+The script will create new files in the same directory;
+`file1-pay.png
+file2-pay.png
+anotherfile-pay.png`
+
+The png files are QR encoded lightning network invoces. Once paid the script will remove -pay.png files.
 
