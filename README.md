@@ -19,12 +19,13 @@ Then folow the prompts in the script. A QR encoded lightning network invoice wil
 
 ## sendfile.sh usage example, (requires qrencode to be installed);
 
-`./sendfile.sh file1.txt file2.jpg anotherfile.doc`
+`./sendfile.sh file1.txt file2.jpg filen.doc`
 
 The script will create new files in the same directory;
+
 `file1-pay.png
 file2-pay.png
-anotherfile-pay.png`
+filen-pay.png`
 
 The png files are QR encoded lightning network invoces. Once paid the script will remove -pay.png files.
 
